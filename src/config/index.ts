@@ -57,10 +57,10 @@ interface SQLConfig {
 }
 
 export const sqlConfig: SQLConfig = {
-    host: process.env.DB_MYSQL_HOST!,
-    port: parseInt(process.env.DB_MYSQL_PORT!),
-    user: process.env.DB_MYSQL_USERNAME!,
-    pass: process.env.DB_MYSQL_PASSWORD!,
-    database: process.env.DB_MYSQL_DATABASE!,
-    connection: process.env.DB_MYSQL_CONNECTION!,
+    host: process.env.MYSQL_HOST!,
+    port: parseInt(process.env.MYSQL_PORT!),
+    user: process.env.MYSQL_USERNAME!,
+    pass: process.env.MYSQL_PASSWORD!,
+    database: process.env.MYSQL_DATABASE!,
+    connection: process.env.MYSQL_CONNECTION!,
 };
