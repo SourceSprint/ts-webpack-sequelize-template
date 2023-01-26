@@ -3,7 +3,7 @@ import createServer, { CreateServerOptions } from "@/www";
 import pool from "@/helpers/sequelize-pool";
 
 import routes from "@/routes";
-import { port, isProduction } from "@/config";
+import { port, isProduction, allowedDomains } from "@/config";
 
 async function startServer() {
     try {
@@ -23,6 +23,7 @@ async function startServer() {
         const options: CreateServerOptions = {
             port,
             production: isProduction,
+            whitelistedDomains: allowedDomains,
         };
 
         const app = await createServer(options);
