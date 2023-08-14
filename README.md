@@ -11,3 +11,8 @@ This is a NodeJS Server Template with support for the following OOB.
 - Docker
 - Docker Compose
 - Prettier
+- OpenCommit
+
+## Requirements
+
+- NodeJS 18.16.0
