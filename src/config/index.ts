@@ -32,11 +32,6 @@ const runtimeEnvironment: RequiredEnvironment[] = [
         name: "MYSQL_DATABASE",
         type: RequiredEnvironmentTypes.String,
     },
-    {
-        name: "ALLOWED_DOMAINS",
-        type: RequiredEnvironmentTypes.StringArray,
-        delimiter: ",",
-    },
 ];
 
 validate(runtimeEnvironment);
