@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
+    "target": "ES2022",
+    "module": "ES2022",
     "rootDir": "./src",
     "baseUrl": ".",
+    "resolveJsonModule": true,
     "removeComments": true,
     "declaration": true,
     "outDir": "./build",

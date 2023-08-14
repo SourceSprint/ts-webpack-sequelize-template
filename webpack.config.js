@@ -32,6 +32,9 @@ module.exports = {
             stdin: false,
         }),
     ],
+    experiments: {
+        topLevelAwait: true,
+    },
     optimization: {
         minimize: true,
         minimizer: [
